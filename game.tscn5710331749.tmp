@@ -1,0 +1,289 @@
+[gd_scene format=3 uid="uid://b21ojtafh4sen"]
+
+[ext_resource type="Texture2D" uid="uid://dhd6b4ekl1fed" path="res://art/UI/Button1.png" id="1_80nbo"]
+[ext_resource type="Script" uid="uid://bciutirdu6cqh" path="res://resources/ui_manager.gd" id="1_fc0e3"]
+[ext_resource type="Texture2D" uid="uid://fwx4xi5x6e7j" path="res://art/UI/UI_background.png" id="2_e2o6t"]
+[ext_resource type="Texture2D" uid="uid://dkojxi5ljyeno" path="res://art/UI/UI_background2.png" id="2_mfdv2"]
+[ext_resource type="FontFile" uid="uid://dyjet0nnebsnl" path="res://fonts/PressStart2P-Regular.ttf" id="3_j5wjh"]
+[ext_resource type="Script" uid="uid://dihlpsi4lrp8h" path="res://resources/controller_manager.gd" id="4_7jktm"]
+[ext_resource type="Texture2D" uid="uid://cva3hn1dutpb8" path="res://art/UI/ButtonDown.png" id="4_ryrav"]
+[ext_resource type="Texture2D" uid="uid://bwm8rsk4wp2x" path="res://art/UI/GoldItem.png" id="4_vef74"]
+[ext_resource type="Texture2D" uid="uid://dnrg8sdfipkkb" path="res://art/UI/SilverItem.png" id="5_hve3p"]
+[ext_resource type="Texture2D" uid="uid://bmgkuiq6aph06" path="res://art/UI/ButtonHover.png" id="5_ryrav"]
+[ext_resource type="Texture2D" uid="uid://buyrc4y6lap4h" path="res://art/UI/Token.png" id="6_iotsf"]
+[ext_resource type="Texture2D" uid="uid://dfqwiaugjnqke" path="res://art/UI/Candle.png" id="7_lc2xo"]
+[ext_resource type="Texture2D" uid="uid://byarwaqsnt03b" path="res://art/UI/BottomLeftUI.png" id="12_215e1"]
+[ext_resource type="Texture2D" uid="uid://c2oq7kmi1wqf0" path="res://art/UI/ShopIcon.png" id="13_80cx4"]
+[ext_resource type="Texture2D" uid="uid://bfr6cfkexq7yw" path="res://art/UI/ShopIcon_Hover.png" id="14_e8heu"]
+[ext_resource type="Texture2D" uid="uid://mvilje52j6aa" path="res://art/UI/ShopIcon_Pressed.png" id="14_rvswv"]
+[ext_resource type="Texture2D" uid="uid://dwhds0v8j1u7y" path="res://art/UI/SettingsIcon.png" id="16_rvswv"]
+[ext_resource type="Script" uid="uid://bcjtir2rc1r4u" path="res://towers/tower.gd" id="18_rvswv"]
+[ext_resource type="Resource" uid="uid://dn4di60aq4npf" path="res://resources/tower_1.tres" id="19_boyg6"]
+[ext_resource type="PackedScene" uid="uid://dwwd3e3cydqq" path="res://scenes/BasicEnemy.tscn" id="20_e36ub"]
+
+[node name="Game" type="Node2D" unique_id=1362620839]
+
+[node name="UI" type="CanvasLayer" parent="." unique_id=1540015715]
+
+[node name="UI" type="Control" parent="UI" unique_id=19398917]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_fc0e3")
+
+[node name="TopLeftBackground" type="TextureRect" parent="UI/UI" unique_id=1321322608]
+layout_mode = 1
+offset_left = -9.0
+offset_top = -7.0
+offset_right = 203.0
+offset_bottom = 49.0
+scale = Vector2(3, 3)
+texture = ExtResource("2_mfdv2")
+
+[node name="Turn" type="Label" parent="UI/UI/TopLeftBackground" unique_id=1911291068]
+layout_mode = 0
+offset_left = 8.333334
+offset_top = 7.666667
+offset_right = 56.333336
+offset_bottom = 15.666668
+theme_override_fonts/font = ExtResource("3_j5wjh")
+theme_override_font_sizes/font_size = 8
+text = "Turn"
+
+[node name="Turn#" type="Label" parent="UI/UI/TopLeftBackground/Turn" unique_id=903209448]
+layout_mode = 0
+offset_left = 12.000001
+offset_top = 10.000002
+offset_right = 60.0
+offset_bottom = 18.000002
+theme_override_fonts/font = ExtResource("3_j5wjh")
+theme_override_font_sizes/font_size = 8
+text = "1"
+
+[node name="TeamName" type="Label" parent="UI/UI/TopLeftBackground" unique_id=12507477]
+layout_mode = 0
+offset_left = 47.666668
+offset_top = 4.3333335
+offset_right = 124.66667
+offset_bottom = 32.333332
+theme_override_font_sizes/font_size = 16
+text = "ENEMIES"
+
+[node name="GoldImage" type="TextureRect" parent="UI/UI/TopLeftBackground" unique_id=880355576]
+layout_mode = 0
+offset_left = 6.3333335
+offset_top = 32.666664
+offset_right = 46.333332
+offset_bottom = 72.66667
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("4_vef74")
+
+[node name="GoldCount" type="Label" parent="UI/UI/TopLeftBackground" unique_id=1942785273]
+layout_mode = 0
+offset_left = 29.000002
+offset_top = 37.666668
+offset_right = 45.000008
+offset_bottom = 45.666668
+theme_override_fonts/font = ExtResource("3_j5wjh")
+theme_override_font_sizes/font_size = 8
+text = "10"
+
+[node name="SilverImage" type="TextureRect" parent="UI/UI/TopLeftBackground" unique_id=1152641986]
+layout_mode = 0
+offset_left = 56.0
+offset_top = 32.33333
+offset_right = 96.0
+offset_bottom = 72.33333
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("5_hve3p")
+
+[node name="SilverCount" type="Label" parent="UI/UI/TopLeftBackground" unique_id=545157785]
+layout_mode = 0
+offset_left = 79.33335
+offset_top = 37.666668
+offset_right = 95.33335
+offset_bottom = 45.666668
+theme_override_fonts/font = ExtResource("3_j5wjh")
+theme_override_font_sizes/font_size = 8
+text = "26"
+
+[node name="ActivationImage" type="TextureRect" parent="UI/UI/TopLeftBackground" unique_id=1842082274]
+layout_mode = 0
+offset_left = 106.00001
+offset_top = 31.999998
+offset_right = 146.00003
+offset_bottom = 72.0
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("6_iotsf")
+
+[node name="ActivationCountB" type="Label" parent="UI/UI/TopLeftBackground" unique_id=535768698]
+layout_mode = 0
+offset_left = 130.0
+offset_top = 21.666666
+offset_right = 146.0
+offset_bottom = 51.666664
+theme_override_fonts/font = ExtResource("3_j5wjh")
+theme_override_font_sizes/font_size = 8
+text = "
+_
+7"
+
+[node name="ActivationCountT" type="Label" parent="UI/UI/TopLeftBackground/ActivationCountB" unique_id=1433015060]
+layout_mode = 0
+offset_left = -0.33333334
+offset_top = 8.666667
+offset_right = 15.666667
+offset_bottom = 38.666664
+theme_override_fonts/font = ExtResource("3_j5wjh")
+theme_override_font_sizes/font_size = 8
+text = "4"
+
+[node name="Candle" type="TextureRect" parent="UI/UI/TopLeftBackground" unique_id=263638220]
+layout_mode = 0
+offset_left = 122.333336
+offset_top = -5.0
+offset_right = 186.33334
+offset_bottom = 59.0
+texture = ExtResource("7_lc2xo")
+
+[node name="BottomCenterBackground" type="TextureRect" parent="UI/UI" unique_id=1956348355]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -307.0
+offset_top = -99.0
+offset_right = -95.0
+offset_bottom = -71.0
+grow_horizontal = 2
+grow_vertical = 0
+scale = Vector2(3, 3)
+texture = ExtResource("2_e2o6t")
+
+[node name="BottomCenterHBox" type="HBoxContainer" parent="UI/UI/BottomCenterBackground" unique_id=33697579]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -98.66667
+offset_top = -22.333328
+offset_right = 97.33333
+offset_bottom = 17.666672
+
+[node name="Slot 1" type="TextureButton" parent="UI/UI/BottomCenterBackground/BottomCenterHBox" unique_id=126057604]
+layout_mode = 2
+texture_normal = ExtResource("1_80nbo")
+texture_pressed = ExtResource("4_ryrav")
+texture_hover = ExtResource("5_ryrav")
+
+[node name="Slot 2" type="TextureButton" parent="UI/UI/BottomCenterBackground/BottomCenterHBox" unique_id=90571440]
+layout_mode = 2
+texture_normal = ExtResource("1_80nbo")
+texture_pressed = ExtResource("4_ryrav")
+texture_hover = ExtResource("5_ryrav")
+
+[node name="Slot 3" type="TextureButton" parent="UI/UI/BottomCenterBackground/BottomCenterHBox" unique_id=508835390]
+layout_mode = 2
+texture_normal = ExtResource("1_80nbo")
+texture_pressed = ExtResource("4_ryrav")
+texture_hover = ExtResource("5_ryrav")
+
+[node name="Slot 4" type="TextureButton" parent="UI/UI/BottomCenterBackground/BottomCenterHBox" unique_id=1864246738]
+layout_mode = 2
+texture_normal = ExtResource("1_80nbo")
+texture_pressed = ExtResource("4_ryrav")
+texture_hover = ExtResource("5_ryrav")
+
+[node name="Slot 5" type="TextureButton" parent="UI/UI/BottomCenterBackground/BottomCenterHBox" unique_id=371306288]
+layout_mode = 2
+texture_normal = ExtResource("1_80nbo")
+texture_pressed = ExtResource("4_ryrav")
+texture_hover = ExtResource("5_ryrav")
+
+[node name="Slot 6" type="TextureButton" parent="UI/UI/BottomCenterBackground/BottomCenterHBox" unique_id=1482999521]
+layout_mode = 2
+texture_normal = ExtResource("1_80nbo")
+texture_pressed = ExtResource("4_ryrav")
+texture_hover = ExtResource("5_ryrav")
+
+[node name="Slot 7" type="TextureButton" parent="UI/UI/BottomCenterBackground/BottomCenterHBox" unique_id=2086084901]
+layout_mode = 2
+texture_normal = ExtResource("1_80nbo")
+texture_pressed = ExtResource("4_ryrav")
+texture_hover = ExtResource("5_ryrav")
+
+[node name="Slot 8" type="TextureButton" parent="UI/UI/BottomCenterBackground/BottomCenterHBox" unique_id=1259869226]
+layout_mode = 2
+texture_normal = ExtResource("1_80nbo")
+texture_pressed = ExtResource("4_ryrav")
+texture_hover = ExtResource("5_ryrav")
+
+[node name="Slot 9" type="TextureButton" parent="UI/UI/BottomCenterBackground/BottomCenterHBox" unique_id=2054177128]
+layout_mode = 2
+texture_normal = ExtResource("1_80nbo")
+texture_pressed = ExtResource("4_ryrav")
+texture_hover = ExtResource("5_ryrav")
+
+[node name="Slot 10" type="TextureButton" parent="UI/UI/BottomCenterBackground/BottomCenterHBox" unique_id=1024965056]
+layout_mode = 2
+texture_normal = ExtResource("1_80nbo")
+texture_pressed = ExtResource("4_ryrav")
+texture_hover = ExtResource("5_ryrav")
+
+[node name="TextureRect" type="TextureRect" parent="UI/UI" unique_id=1073281259]
+layout_mode = 1
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_top = -192.0
+offset_right = 40.0
+offset_bottom = -128.0
+grow_vertical = 0
+scale = Vector2(3, 3)
+texture = ExtResource("12_215e1")
+
+[node name="ShopButton" type="TextureButton" parent="UI/UI/TextureRect" unique_id=1286268772]
+layout_mode = 0
+offset_left = 7.333333
+offset_top = 6.3333344
+offset_right = 31.333332
+offset_bottom = 30.333334
+texture_normal = ExtResource("13_80cx4")
+texture_pressed = ExtResource("14_rvswv")
+texture_hover = ExtResource("14_e8heu")
+
+[node name="SettingsButton" type="TextureButton" parent="UI/UI/TextureRect" unique_id=1387680643]
+layout_mode = 0
+offset_left = 7.3333335
+offset_top = 35.333336
+offset_right = 31.333338
+offset_bottom = 59.33334
+texture_normal = ExtResource("16_rvswv")
+
+[node name="ControllerManager" type="Node" parent="." unique_id=1107380516]
+script = ExtResource("4_7jktm")
+
+[node name="tower_1" type="Sprite2D" parent="." unique_id=854456333]
+script = ExtResource("18_rvswv")
+tower_r = ExtResource("19_boyg6")
+
+[node name="BasicEnemy" parent="." unique_id=1029741581 instance=ExtResource("20_e36ub")]
+position = Vector2(569, 281)
+
+[connection signal="button_up" from="UI/UI/BottomCenterBackground/BottomCenterHBox/Slot 1" to="UI/UI" method="_on_slot_1_button_up"]
+[connection signal="button_up" from="UI/UI/BottomCenterBackground/BottomCenterHBox/Slot 2" to="UI/UI" method="_on_slot_2_button_up"]
+[connection signal="button_up" from="UI/UI/BottomCenterBackground/BottomCenterHBox/Slot 3" to="UI/UI" method="_on_slot_3_button_up"]
+[connection signal="button_up" from="UI/UI/BottomCenterBackground/BottomCenterHBox/Slot 4" to="UI/UI" method="_on_slot_4_button_up"]
+[connection signal="button_up" from="UI/UI/BottomCenterBackground/BottomCenterHBox/Slot 5" to="UI/UI" method="_on_slot_5_button_up"]
+[connection signal="button_up" from="UI/UI/BottomCenterBackground/BottomCenterHBox/Slot 6" to="UI/UI" method="_on_slot_6_button_up"]
+[connection signal="button_up" from="UI/UI/BottomCenterBackground/BottomCenterHBox/Slot 7" to="UI/UI" method="_on_slot_7_button_up"]
+[connection signal="button_up" from="UI/UI/BottomCenterBackground/BottomCenterHBox/Slot 8" to="UI/UI" method="_on_slot_8_button_up"]
+[connection signal="button_up" from="UI/UI/BottomCenterBackground/BottomCenterHBox/Slot 9" to="UI/UI" method="_on_slot_9_button_up"]
+[connection signal="button_up" from="UI/UI/BottomCenterBackground/BottomCenterHBox/Slot 10" to="UI/UI" method="_on_slot_10_button_up"]

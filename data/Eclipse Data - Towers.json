@@ -1,0 +1,154 @@
+{
+  "0": {
+	"TOWER_TYPE": "TOWER_1",
+	"TOWER_SUB_TYPE": "ATTACK",
+	"MAX_HEALTH": 5,
+	"COST_GOLD": 0,
+	"COST_SILVER": 4,
+	"RARITY": "COMMON"
+  },
+  "1": {
+	"TOWER_TYPE": "TOWER_2",
+	"TOWER_SUB_TYPE": "ECONOMY",
+	"MAX_HEALTH": 4,
+	"COST_GOLD": 1,
+	"COST_SILVER": 0,
+	"RARITY": "COMMON"
+  },
+  "2": {
+	"TOWER_TYPE": "TOWER_3",
+	"TOWER_SUB_TYPE": "DEFENSE",
+	"MAX_HEALTH": 12,
+	"COST_GOLD": 0,
+	"COST_SILVER": 2,
+	"RARITY": "COMMON"
+  },
+  "3": {
+	"TOWER_TYPE": null,
+	"TOWER_SUB_TYPE": "ATTACK",
+	"MAX_HEALTH": null,
+	"COST_GOLD": 0,
+	"COST_SILVER": 0,
+	"RARITY": "UNCOMMON"
+  },
+  "4": {
+	"TOWER_TYPE": null,
+	"TOWER_SUB_TYPE": "ATTACK",
+	"MAX_HEALTH": null,
+	"COST_GOLD": 0,
+	"COST_SILVER": 0,
+	"RARITY": "UNCOMMON"
+  },
+  "5": {
+	"TOWER_TYPE": null,
+	"TOWER_SUB_TYPE": "ATTACK",
+	"MAX_HEALTH": null,
+	"COST_GOLD": 0,
+	"COST_SILVER": 0,
+	"RARITY": "UNCOMMON"
+  },
+  "6": {
+	"TOWER_TYPE": null,
+	"TOWER_SUB_TYPE": "ATTACK",
+	"MAX_HEALTH": null,
+	"COST_GOLD": 0,
+	"COST_SILVER": 0,
+	"RARITY": "RARE"
+  },
+  "7": {
+	"TOWER_TYPE": null,
+	"TOWER_SUB_TYPE": "ATTACK",
+	"MAX_HEALTH": null,
+	"COST_GOLD": 0,
+	"COST_SILVER": 0,
+	"RARITY": "EPIC"
+  },
+  "8": {
+	"TOWER_TYPE": null,
+	"TOWER_SUB_TYPE": "ATTACK",
+	"MAX_HEALTH": null,
+	"COST_GOLD": 0,
+	"COST_SILVER": 0,
+	"RARITY": "MYTHIC"
+  },
+  "9": {
+	"TOWER_TYPE": null,
+	"TOWER_SUB_TYPE": "ATTACK",
+	"MAX_HEALTH": null,
+	"COST_GOLD": 0,
+	"COST_SILVER": 0,
+	"RARITY": "LEGENDARY"
+  },
+  "10": {
+	"TOWER_TYPE": null,
+	"TOWER_SUB_TYPE": "ATTACK",
+	"MAX_HEALTH": null,
+	"COST_GOLD": 0,
+	"COST_SILVER": 0,
+	"RARITY": "COMMON"
+  },
+  "11": {
+	"TOWER_TYPE": null,
+	"TOWER_SUB_TYPE": "ATTACK",
+	"MAX_HEALTH": null,
+	"COST_GOLD": 0,
+	"COST_SILVER": 0,
+	"RARITY": "COMMON"
+  },
+  "12": {
+	"TOWER_TYPE": null,
+	"TOWER_SUB_TYPE": "ATTACK",
+	"MAX_HEALTH": null,
+	"COST_GOLD": 0,
+	"COST_SILVER": 0,
+	"RARITY": "COMMON"
+  },
+  "13": {
+	"TOWER_TYPE": null,
+	"TOWER_SUB_TYPE": "ATTACK",
+	"MAX_HEALTH": null,
+	"COST_GOLD": 0,
+	"COST_SILVER": 0,
+	"RARITY": "COMMON"
+  },
+  "14": {
+	"TOWER_TYPE": null,
+	"TOWER_SUB_TYPE": "ATTACK",
+	"MAX_HEALTH": null,
+	"COST_GOLD": 0,
+	"COST_SILVER": 0,
+	"RARITY": "COMMON"
+  },
+  "15": {
+	"TOWER_TYPE": null,
+	"TOWER_SUB_TYPE": "ATTACK",
+	"MAX_HEALTH": null,
+	"COST_GOLD": 0,
+	"COST_SILVER": 0,
+	"RARITY": "COMMON"
+  },
+  "16": {
+	"TOWER_TYPE": null,
+	"TOWER_SUB_TYPE": "ATTACK",
+	"MAX_HEALTH": null,
+	"COST_GOLD": 0,
+	"COST_SILVER": 0,
+	"RARITY": "COMMON"
+  },
+  "17": {
+	"TOWER_TYPE": null,
+	"TOWER_SUB_TYPE": "ATTACK",
+	"MAX_HEALTH": null,
+	"COST_GOLD": 0,
+	"COST_SILVER": 0,
+	"RARITY": "COMMON"
+  },
+  "18": {
+	"TOWER_TYPE": null,
+	"TOWER_SUB_TYPE": "ATTACK",
+	"MAX_HEALTH": null,
+	"COST_GOLD": 0,
+	"COST_SILVER": 0,
+	"RARITY": "COMMON"
+  }
+}

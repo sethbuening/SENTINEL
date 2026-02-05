@@ -1,0 +1,116 @@
+[gd_scene format=3 uid="uid://dnnn26vklpflt"]
+
+[ext_resource type="Script" uid="uid://0hkwwlsg7qdu" path="res://scenes/health_bar.gd" id="1_tmb1u"]
+
+[sub_resource type="Gradient" id="Gradient_0vr00"]
+offsets = PackedFloat32Array(1)
+colors = PackedColorArray(1, 1, 1, 1)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_m8cof"]
+gradient = SubResource("Gradient_0vr00")
+
+[sub_resource type="Gradient" id="Gradient_3ox23"]
+offsets = PackedFloat32Array(1)
+colors = PackedColorArray(0.446777, 0.44677705, 0.44677705, 1)
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_2korg"]
+gradient = SubResource("Gradient_3ox23")
+
+[sub_resource type="Gradient" id="Gradient_2korg"]
+offsets = PackedFloat32Array(0)
+colors = PackedColorArray(0.3515629, 0.3515629, 0.35156283, 1)
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_kmwlv"]
+gradient = SubResource("Gradient_2korg")
+
+[sub_resource type="Animation" id="Animation_rr2qc"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("OrangeBar:tint_progress")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(0.48464072, 0.013152991, 0, 1)]
+}
+
+[sub_resource type="Animation" id="Animation_tmb1u"]
+resource_name = "flashing_orange_bar"
+length = 0.2
+loop_mode = 1
+step = 0.025
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("OrangeBar:tint_progress")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.2),
+"transitions": PackedFloat32Array(0, 0, 1),
+"update": 0,
+"values": [Color(0.8156863, 0.34509805, 0.101960786, 1), Color(1, 1, 1, 1), Color(0.8156863, 0.34509805, 0.101960786, 1)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_rr2qc"]
+_data = {
+&"RESET": SubResource("Animation_rr2qc"),
+&"flashing_orange_bar": SubResource("Animation_tmb1u")
+}
+
+[node name="HealthBar" type="Node2D"]
+z_index = 2
+y_sort_enabled = true
+script = ExtResource("1_tmb1u")
+
+[node name="OrangeBar" type="TextureProgressBar" parent="."]
+z_index = 1
+y_sort_enabled = true
+offset_left = -1289.3329
+offset_top = -1186.0
+offset_right = -1225.3329
+offset_bottom = -1122.0
+scale = Vector2(41.667, 3.125)
+max_value = 400.0
+value = 400.0
+texture_progress = SubResource("GradientTexture2D_m8cof")
+tint_under = Color(0.28485027, 0.28485027, 0.28485027, 1)
+tint_progress = Color(0.48464072, 0.013152991, 0, 1)
+
+[node name="RedBar" type="TextureProgressBar" parent="."]
+z_index = 2
+y_sort_enabled = true
+offset_left = -1289.3329
+offset_top = -1186.0
+offset_right = -1225.3329
+offset_bottom = -1122.0
+scale = Vector2(41.667, 3.125)
+max_value = 8.0
+value = 8.0
+texture_progress = SubResource("GradientTexture2D_m8cof")
+tint_progress = Color(0.87364316, 0.150213, 0.15323606, 1)
+
+[node name="BackgroundBar" type="TextureRect" parent="."]
+offset_left = -1373.0
+offset_top = -1266.0
+offset_right = -1117.0
+offset_bottom = -1226.0
+scale = Vector2(11.1, 9)
+texture = SubResource("GradientTexture1D_2korg")
+
+[node name="GrayBar" type="TextureRect" parent="."]
+offset_left = -1288.9999
+offset_top = -1186.0
+offset_right = -1022.2999
+offset_bottom = -1146.0
+scale = Vector2(10, 5)
+texture = SubResource("GradientTexture1D_kmwlv")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+&"": SubResource("AnimationLibrary_rr2qc")
+}

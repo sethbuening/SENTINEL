@@ -1,0 +1,142 @@
+{
+  "0": {
+	"ENEMY_TYPE": "ENEMY_1",
+	"ENEMY_SUB_TYPE": "MELEE",
+	"MAX_HEALTH": 50,
+	"WAVE_COST": 5,
+	"Column 6": null
+  },
+  "1": {
+	"ENEMY_TYPE": "ENEMY_2",
+	"ENEMY_SUB_TYPE": "RANGED",
+	"MAX_HEALTH": 5,
+	"WAVE_COST": 1,
+	"Column 6": null
+  },
+  "2": {
+	"ENEMY_TYPE": "HEALER",
+	"ENEMY_SUB_TYPE": "SPECIAL",
+	"MAX_HEALTH": 15,
+	"WAVE_COST": 2,
+	"Column 6": null
+  },
+  "3": {
+	"ENEMY_TYPE": null,
+	"ENEMY_SUB_TYPE": null,
+	"MAX_HEALTH": null,
+	"WAVE_COST": null,
+	"Column 6": null
+  },
+  "4": {
+	"ENEMY_TYPE": null,
+	"ENEMY_SUB_TYPE": null,
+	"MAX_HEALTH": null,
+	"WAVE_COST": null,
+	"Column 6": null
+  },
+  "5": {
+	"ENEMY_TYPE": null,
+	"ENEMY_SUB_TYPE": null,
+	"MAX_HEALTH": null,
+	"WAVE_COST": null,
+	"Column 6": null
+  },
+  "6": {
+	"ENEMY_TYPE": null,
+	"ENEMY_SUB_TYPE": null,
+	"MAX_HEALTH": null,
+	"WAVE_COST": null,
+	"Column 6": null
+  },
+  "7": {
+	"ENEMY_TYPE": null,
+	"ENEMY_SUB_TYPE": null,
+	"MAX_HEALTH": null,
+	"WAVE_COST": null,
+	"Column 6": null
+  },
+  "8": {
+	"ENEMY_TYPE": null,
+	"ENEMY_SUB_TYPE": null,
+	"MAX_HEALTH": null,
+	"WAVE_COST": null,
+	"Column 6": null
+  },
+  "9": {
+	"ENEMY_TYPE": null,
+	"ENEMY_SUB_TYPE": null,
+	"MAX_HEALTH": null,
+	"WAVE_COST": null,
+	"Column 6": null
+  },
+  "10": {
+	"ENEMY_TYPE": null,
+	"ENEMY_SUB_TYPE": null,
+	"MAX_HEALTH": null,
+	"WAVE_COST": null,
+	"Column 6": null
+  },
+  "11": {
+	"ENEMY_TYPE": null,
+	"ENEMY_SUB_TYPE": null,
+	"MAX_HEALTH": null,
+	"WAVE_COST": null,
+	"Column 6": null
+  },
+  "12": {
+	"ENEMY_TYPE": null,
+	"ENEMY_SUB_TYPE": null,
+	"MAX_HEALTH": null,
+	"WAVE_COST": null,
+	"Column 6": null
+  },
+  "13": {
+	"ENEMY_TYPE": null,
+	"ENEMY_SUB_TYPE": null,
+	"MAX_HEALTH": null,
+	"WAVE_COST": null,
+	"Column 6": null
+  },
+  "14": {
+	"ENEMY_TYPE": null,
+	"ENEMY_SUB_TYPE": null,
+	"MAX_HEALTH": null,
+	"WAVE_COST": null,
+	"Column 6": null
+  },
+  "15": {
+	"ENEMY_TYPE": null,
+	"ENEMY_SUB_TYPE": null,
+	"MAX_HEALTH": null,
+	"WAVE_COST": null,
+	"Column 6": null
+  },
+  "16": {
+	"ENEMY_TYPE": null,
+	"ENEMY_SUB_TYPE": null,
+	"MAX_HEALTH": null,
+	"WAVE_COST": null,
+	"Column 6": null
+  },
+  "17": {
+	"ENEMY_TYPE": null,
+	"ENEMY_SUB_TYPE": null,
+	"MAX_HEALTH": null,
+	"WAVE_COST": null,
+	"Column 6": null
+  },
+  "18": {
+	"ENEMY_TYPE": null,
+	"ENEMY_SUB_TYPE": null,
+	"MAX_HEALTH": null,
+	"WAVE_COST": null,
+	"Column 6": null
+  },
+  "19": {
+	"ENEMY_TYPE": null,
+	"ENEMY_SUB_TYPE": null,
+	"MAX_HEALTH": null,
+	"WAVE_COST": null,
+	"Column 6": null
+  }
+}

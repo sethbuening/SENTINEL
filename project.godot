@@ -1,0 +1,45 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
+config_version=5
+
+[application]
+
+config/name="TD"
+run/main_scene="uid://b21ojtafh4sen"
+config/features=PackedStringArray("4.6", "Mobile")
+config/icon="uid://bhb76pber81ps"
+
+[autoload]
+
+Util="*uid://vts78wsbg38g"
+TowerManager="*uid://bbtqtsb55sq3q"
+AbilityManager="*uid://bmfxsp70amlya"
+EnemyManager="*uid://i26rqugm2hpt"
+
+[display]
+
+window/size/mode=3
+
+[physics]
+
+3d/physics_engine="Jolt Physics"
+
+[rendering]
+
+textures/canvas_textures/default_texture_filter=0
+rendering_device/driver.windows="d3d12"
+renderer/rendering_method="mobile"
+environment/defaults/default_clear_color=Color(0, 0, 0, 1)
+
+[steam]
+
+initialization/app_id=0
+initialization/initialize_on_startup=false
+initialization/embed_callbacks=false
+multiplayer_peer/max_channels=4
