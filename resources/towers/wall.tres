@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="tower_r" format=3 uid="uid://ck3hy7dt175ak"]
+
+[ext_resource type="Resource" uid="uid://di5f23xfat10r" path="res://resources/abilities/BOLSTER.tres" id="1_ljnrj"]
+[ext_resource type="Script" uid="uid://cakv0lh53bjya" path="res://towers/tower_r.gd" id="2_wj3ku"]
+[ext_resource type="Resource" uid="uid://dp2qvuhunjuwy" path="res://resources/abilities/BOLSTER_LESSER.tres" id="3_seyg0"]
+
+[resource]
+script = ExtResource("2_wj3ku")
+type = 2
+primary = ExtResource("1_ljnrj")
+secondary = ExtResource("3_seyg0")
+bounds = Array[bool]([false, false, false, false, false, false, false, false])
+metadata/_custom_type_script = "uid://cakv0lh53bjya"

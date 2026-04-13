@@ -1,0 +1,31 @@
+[gd_scene format=3 uid="uid://dwwd3e3cydqq"]
+
+[ext_resource type="Script" uid="uid://bow46je4dabju" path="res://enemies/basic_enemy.gd" id="1_cg60k"]
+[ext_resource type="Texture2D" uid="uid://tcbyo5rd1vn" path="res://art/enemies/enemy_1_dr.png" id="2_3ox23"]
+[ext_resource type="PackedScene" uid="uid://cvkcrb1ufy5mw" path="res://scenes/HealthBar.tscn" id="4_2korg"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_cg60k"]
+size = Vector2(26.6, 12.56)
+
+[node name="BasicEnemy" type="CharacterBody2D" unique_id=1029741581]
+y_sort_enabled = true
+scale = Vector2(0.04, 0.04)
+collision_layer = 8
+collision_mask = 8
+motion_mode = 1
+platform_on_leave = 2
+script = ExtResource("1_cg60k")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1759237721]
+position = Vector2(87.50003, 65.99999)
+scale = Vector2(75, 75)
+shape = SubResource("RectangleShape2D_cg60k")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=269215060]
+position = Vector2(178, -628)
+scale = Vector2(100, 100)
+texture = ExtResource("2_3ox23")
+
+[node name="HealthBar" parent="." unique_id=507772654 node_paths=PackedStringArray("sprite") instance=ExtResource("4_2korg")]
+position = Vector2(125, -1750)
+sprite = NodePath("../Sprite2D")

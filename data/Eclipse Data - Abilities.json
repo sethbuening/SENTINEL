@@ -1,135 +1,222 @@
 {
   "0": {
-	"ABILITY_TYPE": "ABILITY_1",
-	"ABILITY_SUB_TYPE": "ATTACK",
-	"DAMAGE": 4,
-	"GAIN_GOLD": 0,
-	"GAIN_SILVER": 0
+    "ABILITY_TYPE": "CHARGE_SHOT",
+    "ABILITY_SUB_TYPE": "ATTACK",
+    "DAMAGE": 4,
+    "GAIN_GOLD": 0,
+    "GAIN_SILVER": 0,
+    "GAIN_HEALTH": 0,
+    "RANGE": 900,
+    "NAME": "Charge Shot",
+    "DESCRIPTION": "Requires at least 2 charges to use. Deals 4 base damage. Any extra charges increase damage by 1 each."
   },
   "1": {
-	"ABILITY_TYPE": "ABILITY_2",
-	"ABILITY_SUB_TYPE": "ECONOMY",
-	"DAMAGE": 0,
-	"GAIN_GOLD": 0,
-	"GAIN_SILVER": 3
+    "ABILITY_TYPE": "MAJOR_SILVER",
+    "ABILITY_SUB_TYPE": "SPECIAL",
+    "DAMAGE": 0,
+    "GAIN_GOLD": 0,
+    "GAIN_SILVER": 3,
+    "GAIN_HEALTH": 0,
+    "RANGE": 0,
+    "NAME": "Silver Mine (3)",
+    "DESCRIPTION": "Gain 3 silver."
   },
   "2": {
-	"ABILITY_TYPE": "ABILITY_3",
-	"ABILITY_SUB_TYPE": "DEFENSE",
-	"DAMAGE": 0,
-	"GAIN_GOLD": 0,
-	"GAIN_SILVER": 0
+    "ABILITY_TYPE": "MINOR_SILVER",
+    "ABILITY_SUB_TYPE": "SPECIAL",
+    "DAMAGE": 0,
+    "GAIN_GOLD": 0,
+    "GAIN_SILVER": 1,
+    "GAIN_HEALTH": 0,
+    "RANGE": 0,
+    "NAME": "Silver Mine (1)",
+    "DESCRIPTION": "Gain 1 silver."
   },
   "3": {
-	"ABILITY_TYPE": null,
-	"ABILITY_SUB_TYPE": null,
-	"DAMAGE": 0,
-	"GAIN_GOLD": 0,
-	"GAIN_SILVER": 0
+    "ABILITY_TYPE": "BOLSTER",
+    "ABILITY_SUB_TYPE": "DEFENSE",
+    "DAMAGE": 0,
+    "GAIN_GOLD": 0,
+    "GAIN_SILVER": 0,
+    "GAIN_HEALTH": 3,
+    "RANGE": 0,
+    "NAME": "Bolster (3)",
+    "DESCRIPTION": "Gain 3 max health."
   },
   "4": {
-	"ABILITY_TYPE": null,
-	"ABILITY_SUB_TYPE": null,
-	"DAMAGE": 0,
-	"GAIN_GOLD": 0,
-	"GAIN_SILVER": 0
+    "ABILITY_TYPE": "BOLSTER_LESSER",
+    "ABILITY_SUB_TYPE": "DEFENSE",
+    "DAMAGE": 0,
+    "GAIN_GOLD": 0,
+    "GAIN_SILVER": 0,
+    "GAIN_HEALTH": 1,
+    "RANGE": 0,
+    "NAME": "Bolster (1)",
+    "DESCRIPTION": "Gain 1 max health."
   },
   "5": {
-	"ABILITY_TYPE": null,
-	"ABILITY_SUB_TYPE": null,
-	"DAMAGE": 0,
-	"GAIN_GOLD": 0,
-	"GAIN_SILVER": 0
+    "ABILITY_TYPE": "CHARGE",
+    "ABILITY_SUB_TYPE": "SPECIAL",
+    "DAMAGE": 0,
+    "GAIN_GOLD": 0,
+    "GAIN_SILVER": 0,
+    "GAIN_HEALTH": 0,
+    "RANGE": 0,
+    "NAME": "Charge",
+    "DESCRIPTION": "Gain 1 charge."
   },
   "6": {
-	"ABILITY_TYPE": null,
-	"ABILITY_SUB_TYPE": null,
-	"DAMAGE": 0,
-	"GAIN_GOLD": 0,
-	"GAIN_SILVER": 0
+    "ABILITY_TYPE": null,
+    "ABILITY_SUB_TYPE": null,
+    "DAMAGE": 0,
+    "GAIN_GOLD": 0,
+    "GAIN_SILVER": 0,
+    "GAIN_HEALTH": 0,
+    "RANGE": 0,
+    "NAME": null,
+    "DESCRIPTION": null
   },
   "7": {
-	"ABILITY_TYPE": null,
-	"ABILITY_SUB_TYPE": null,
-	"DAMAGE": 0,
-	"GAIN_GOLD": 0,
-	"GAIN_SILVER": 0
+    "ABILITY_TYPE": null,
+    "ABILITY_SUB_TYPE": null,
+    "DAMAGE": 0,
+    "GAIN_GOLD": 0,
+    "GAIN_SILVER": 0,
+    "GAIN_HEALTH": 0,
+    "RANGE": 0,
+    "NAME": null,
+    "DESCRIPTION": null
   },
   "8": {
-	"ABILITY_TYPE": null,
-	"ABILITY_SUB_TYPE": null,
-	"DAMAGE": 0,
-	"GAIN_GOLD": 0,
-	"GAIN_SILVER": 0
+    "ABILITY_TYPE": null,
+    "ABILITY_SUB_TYPE": null,
+    "DAMAGE": 0,
+    "GAIN_GOLD": 0,
+    "GAIN_SILVER": 0,
+    "GAIN_HEALTH": 0,
+    "RANGE": 0,
+    "NAME": null,
+    "DESCRIPTION": null
   },
   "9": {
-	"ABILITY_TYPE": null,
-	"ABILITY_SUB_TYPE": null,
-	"DAMAGE": 0,
-	"GAIN_GOLD": 0,
-	"GAIN_SILVER": 0
+    "ABILITY_TYPE": null,
+    "ABILITY_SUB_TYPE": null,
+    "DAMAGE": 0,
+    "GAIN_GOLD": 0,
+    "GAIN_SILVER": 0,
+    "GAIN_HEALTH": 0,
+    "RANGE": 0,
+    "NAME": null,
+    "DESCRIPTION": null
   },
   "10": {
-	"ABILITY_TYPE": null,
-	"ABILITY_SUB_TYPE": null,
-	"DAMAGE": 0,
-	"GAIN_GOLD": 0,
-	"GAIN_SILVER": 0
+    "ABILITY_TYPE": null,
+    "ABILITY_SUB_TYPE": null,
+    "DAMAGE": 0,
+    "GAIN_GOLD": 0,
+    "GAIN_SILVER": 0,
+    "GAIN_HEALTH": 0,
+    "RANGE": 0,
+    "NAME": null,
+    "DESCRIPTION": null
   },
   "11": {
-	"ABILITY_TYPE": null,
-	"ABILITY_SUB_TYPE": null,
-	"DAMAGE": 0,
-	"GAIN_GOLD": 0,
-	"GAIN_SILVER": 0
+    "ABILITY_TYPE": null,
+    "ABILITY_SUB_TYPE": null,
+    "DAMAGE": 0,
+    "GAIN_GOLD": 0,
+    "GAIN_SILVER": 0,
+    "GAIN_HEALTH": 0,
+    "RANGE": 0,
+    "NAME": null,
+    "DESCRIPTION": null
   },
   "12": {
-	"ABILITY_TYPE": null,
-	"ABILITY_SUB_TYPE": null,
-	"DAMAGE": 0,
-	"GAIN_GOLD": 0,
-	"GAIN_SILVER": 0
+    "ABILITY_TYPE": null,
+    "ABILITY_SUB_TYPE": null,
+    "DAMAGE": 0,
+    "GAIN_GOLD": 0,
+    "GAIN_SILVER": 0,
+    "GAIN_HEALTH": 0,
+    "RANGE": 0,
+    "NAME": null,
+    "DESCRIPTION": null
   },
   "13": {
-	"ABILITY_TYPE": null,
-	"ABILITY_SUB_TYPE": null,
-	"DAMAGE": 0,
-	"GAIN_GOLD": 0,
-	"GAIN_SILVER": 0
+    "ABILITY_TYPE": null,
+    "ABILITY_SUB_TYPE": null,
+    "DAMAGE": 0,
+    "GAIN_GOLD": 0,
+    "GAIN_SILVER": 0,
+    "GAIN_HEALTH": 0,
+    "RANGE": 0,
+    "NAME": null,
+    "DESCRIPTION": null
   },
   "14": {
-	"ABILITY_TYPE": null,
-	"ABILITY_SUB_TYPE": null,
-	"DAMAGE": 0,
-	"GAIN_GOLD": 0,
-	"GAIN_SILVER": 0
+    "ABILITY_TYPE": null,
+    "ABILITY_SUB_TYPE": null,
+    "DAMAGE": 0,
+    "GAIN_GOLD": 0,
+    "GAIN_SILVER": 0,
+    "GAIN_HEALTH": 0,
+    "RANGE": 0,
+    "NAME": null,
+    "DESCRIPTION": null
   },
   "15": {
-	"ABILITY_TYPE": null,
-	"ABILITY_SUB_TYPE": null,
-	"DAMAGE": 0,
-	"GAIN_GOLD": 0,
-	"GAIN_SILVER": 0
+    "ABILITY_TYPE": null,
+    "ABILITY_SUB_TYPE": null,
+    "DAMAGE": 0,
+    "GAIN_GOLD": 0,
+    "GAIN_SILVER": 0,
+    "GAIN_HEALTH": 0,
+    "RANGE": 0,
+    "NAME": null,
+    "DESCRIPTION": null
   },
   "16": {
-	"ABILITY_TYPE": null,
-	"ABILITY_SUB_TYPE": null,
-	"DAMAGE": 0,
-	"GAIN_GOLD": 0,
-	"GAIN_SILVER": 0
+    "ABILITY_TYPE": null,
+    "ABILITY_SUB_TYPE": null,
+    "DAMAGE": 0,
+    "GAIN_GOLD": 0,
+    "GAIN_SILVER": 0,
+    "GAIN_HEALTH": 0,
+    "RANGE": 0,
+    "NAME": null,
+    "DESCRIPTION": null
   },
   "17": {
-	"ABILITY_TYPE": null,
-	"ABILITY_SUB_TYPE": null,
-	"DAMAGE": 0,
-	"GAIN_GOLD": 0,
-	"GAIN_SILVER": 0
+    "ABILITY_TYPE": null,
+    "ABILITY_SUB_TYPE": null,
+    "DAMAGE": 0,
+    "GAIN_GOLD": 0,
+    "GAIN_SILVER": 0,
+    "GAIN_HEALTH": 0,
+    "RANGE": 0,
+    "NAME": null,
+    "DESCRIPTION": null
   },
   "18": {
-	"ABILITY_TYPE": null,
-	"ABILITY_SUB_TYPE": null,
-	"DAMAGE": 0,
-	"GAIN_GOLD": 0,
-	"GAIN_SILVER": 0
+    "ABILITY_TYPE": null,
+    "ABILITY_SUB_TYPE": null,
+    "DAMAGE": 0,
+    "GAIN_GOLD": 0,
+    "GAIN_SILVER": 0,
+    "GAIN_HEALTH": 0,
+    "RANGE": 0,
+    "NAME": null,
+    "DESCRIPTION": null
+  },
+  "19": {
+    "ABILITY_TYPE": null,
+    "ABILITY_SUB_TYPE": null,
+    "DAMAGE": 0,
+    "GAIN_GOLD": 0,
+    "GAIN_SILVER": 0,
+    "GAIN_HEALTH": 0,
+    "RANGE": 0,
+    "NAME": null,
+    "DESCRIPTION": null
   }
 }

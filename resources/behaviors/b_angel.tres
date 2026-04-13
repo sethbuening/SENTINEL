@@ -1,0 +1,7 @@
+[gd_resource type="Resource" script_class="Angel" format=3 uid="uid://ikrfiic67681"]
+
+[ext_resource type="Script" uid="uid://dtm7gu1cv2gnh" path="res://enemy_behaviors/angel.gd" id="1_l664u"]
+
+[resource]
+script = ExtResource("1_l664u")
+metadata/_custom_type_script = "uid://dtm7gu1cv2gnh"

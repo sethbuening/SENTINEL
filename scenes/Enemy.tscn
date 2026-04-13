@@ -1,0 +1,33 @@
+[gd_scene format=3 uid="uid://dwwd3e3cydqq"]
+
+[ext_resource type="Script" uid="uid://lmybnk1urjtf" path="res://enemies/enemy.gd" id="1_mpr68"]
+[ext_resource type="Resource" uid="uid://delncj3j2qhfg" path="res://resources/enemies/siege_tank.tres" id="2_ft8do"]
+[ext_resource type="PackedScene" uid="uid://cvkcrb1ufy5mw" path="res://scenes/HealthBar.tscn" id="3_5wwv6"]
+[ext_resource type="Texture2D" uid="uid://cx13m1oefd04c" path="res://art/enemies/golem.png" id="3_ft8do"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_ft8do"]
+radius = 14.33721
+
+[node name="Enemy" type="CharacterBody2D" unique_id=1029741581]
+y_sort_enabled = true
+scale = Vector2(0.04, 0.04)
+collision_layer = 8
+collision_mask = 9
+motion_mode = 1
+platform_on_leave = 2
+script = ExtResource("1_mpr68")
+enemy_r = ExtResource("2_ft8do")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1759237721]
+position = Vector2(250, 75)
+scale = Vector2(75, 75)
+shape = SubResource("CircleShape2D_ft8do")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=269215060]
+position = Vector2(178, -628)
+scale = Vector2(100, 100)
+texture = ExtResource("3_ft8do")
+
+[node name="HealthBar" parent="." unique_id=507772654 node_paths=PackedStringArray("sprite") instance=ExtResource("3_5wwv6")]
+position = Vector2(200, -2025)
+sprite = NodePath("../Sprite2D")

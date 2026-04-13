@@ -1,0 +1,49 @@
+[gd_scene format=3 uid="uid://713jvl2hwuso"]
+
+[ext_resource type="Script" uid="uid://bcjtir2rc1r4u" path="res://towers/tower.gd" id="1_7itwv"]
+[ext_resource type="Texture2D" uid="uid://80vmoh0idwdr" path="res://art/towers/T_Mine.png" id="1_st4tv"]
+[ext_resource type="PackedScene" uid="uid://cvkcrb1ufy5mw" path="res://scenes/HealthBar.tscn" id="2_kl3vk"]
+[ext_resource type="Shader" uid="uid://weac0qufny41" path="res://shaders/white.gdshader" id="3_02lgm"]
+[ext_resource type="Resource" uid="uid://cwtgl4wp0oqsd" path="res://resources/towers/drill.tres" id="3_st4tv"]
+[ext_resource type="Script" uid="uid://cbt7adfhngc38" path="res://scenes/range_primary.gd" id="5_6pmem"]
+[ext_resource type="Script" uid="uid://bwl331ase051w" path="res://scenes/range_secondary.gd" id="5_vxing"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_6dv47"]
+shader = ExtResource("3_02lgm")
+shader_parameter/outline_color = Color(1, 1, 1, 1)
+
+[node name="Tower" type="Sprite2D" unique_id=1196575473]
+z_index = 2
+texture = ExtResource("1_st4tv")
+script = ExtResource("1_7itwv")
+tower_resource = ExtResource("3_st4tv")
+
+[node name="HealthBar" parent="." unique_id=1903623599 instance=ExtResource("2_kl3vk")]
+position = Vector2(0, -13.4)
+scale = Vector2(0.01, 0.01)
+
+[node name="StaticBody2D" type="StaticBody2D" parent="." unique_id=1446319013]
+collision_mask = 0
+input_pickable = true
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="StaticBody2D" unique_id=1923813679]
+polygon = PackedVector2Array(42.93, 6.61, 36.725, -11.7, 2.34, -25.865, -31.875, -9.985, -27.81, 19.035, -8.08, 33.35, 5.38, 33.37)
+
+[node name="Outline" type="Sprite2D" parent="." unique_id=1331730047]
+visible = false
+z_index = -1
+material = SubResource("ShaderMaterial_6dv47")
+scale = Vector2(1.1, 1.1)
+
+[node name="Range_Primary" type="Sprite2D" parent="." unique_id=1326994452]
+visible = false
+z_index = 1
+script = ExtResource("5_6pmem")
+
+[node name="Range_Secondary" type="Sprite2D" parent="." unique_id=559943830]
+visible = false
+z_index = 1
+script = ExtResource("5_vxing")
+
+[connection signal="mouse_shape_entered" from="StaticBody2D" to="." method="_on_static_body_2d_mouse_shape_entered"]
+[connection signal="mouse_shape_exited" from="StaticBody2D" to="." method="_on_static_body_2d_mouse_shape_exited"]

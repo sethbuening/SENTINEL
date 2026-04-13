@@ -1,0 +1,7 @@
+[gd_resource type="Resource" script_class="Basic_Behavior" format=3 uid="uid://3peme7hj43jq"]
+
+[ext_resource type="Script" uid="uid://bow46je4dabju" path="res://enemy_behaviors/siege_tank.gd" id="1_jty7y"]
+
+[resource]
+script = ExtResource("1_jty7y")
+metadata/_custom_type_script = "uid://bow46je4dabju"

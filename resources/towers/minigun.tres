@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="tower_r" format=3 uid="uid://dn4di60aq4npf"]
+
+[ext_resource type="Resource" uid="uid://djuqn47vt8qpl" path="res://resources/abilities/CHARGE_SHOT.tres" id="1_p2pak"]
+[ext_resource type="Script" uid="uid://cakv0lh53bjya" path="res://towers/tower_r.gd" id="2_aacep"]
+[ext_resource type="Resource" uid="uid://ih05rgxemsi5" path="res://resources/abilities/CHARGE.tres" id="3_yhk65"]
+
+[resource]
+script = ExtResource("2_aacep")
+primary = ExtResource("1_p2pak")
+secondary = ExtResource("3_yhk65")
+bounds = Array[bool]([false, false, false, true, false, false, false, false])
+metadata/_custom_type_script = "uid://cakv0lh53bjya"

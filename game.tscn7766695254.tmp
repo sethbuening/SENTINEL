@@ -1,0 +1,70 @@
+[gd_scene format=3 uid="uid://b21ojtafh4sen"]
+
+[ext_resource type="Script" uid="uid://bkasbc21tvcew" path="res://game.gd" id="1_eow3j"]
+[ext_resource type="PackedScene" uid="uid://cpirjiix6i7un" path="res://scenes/ui.tscn" id="4_fc0e3"]
+[ext_resource type="Resource" uid="uid://dn4di60aq4npf" path="res://resources/tower_attack.tres" id="4_ryrav"]
+[ext_resource type="Resource" uid="uid://cwtgl4wp0oqsd" path="res://resources/tower_silver.tres" id="5_eow3j"]
+[ext_resource type="Resource" uid="uid://ck3hy7dt175ak" path="res://resources/tower_defend.tres" id="6_eow3j"]
+[ext_resource type="PackedScene" uid="uid://713jvl2hwuso" path="res://scenes/Tower.tscn" id="20_hb5m1"]
+[ext_resource type="Script" uid="uid://1l8kvmt4mibl" path="res://camera_2d.gd" id="21_hb5m1"]
+
+[node name="Game" type="Node2D" unique_id=1362620839]
+script = ExtResource("1_eow3j")
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=963290347]
+script = ExtResource("21_hb5m1")
+
+[node name="Attack_1" parent="." unique_id=1196575473 instance=ExtResource("20_hb5m1")]
+position = Vector2(-347, -145)
+scale = Vector2(4, 4)
+tower_r = ExtResource("4_ryrav")
+
+[node name="Attack_2" parent="." unique_id=1622699825 instance=ExtResource("20_hb5m1")]
+position = Vector2(41, -156)
+scale = Vector2(4, 4)
+tower_r = ExtResource("4_ryrav")
+
+[node name="Attack_3" parent="." unique_id=37683816 instance=ExtResource("20_hb5m1")]
+position = Vector2(-167, 158)
+scale = Vector2(4, 4)
+tower_r = ExtResource("4_ryrav")
+
+[node name="Silver_1" parent="." unique_id=167968547 instance=ExtResource("20_hb5m1")]
+position = Vector2(-153, -33)
+scale = Vector2(4, 4)
+tower_r = ExtResource("5_eow3j")
+
+[node name="Defend_1" parent="." unique_id=1023675598 instance=ExtResource("20_hb5m1")]
+position = Vector2(-460, -24)
+scale = Vector2(4, 4)
+tower_r = ExtResource("6_eow3j")
+
+[node name="Defend_2" parent="." unique_id=1858410820 instance=ExtResource("20_hb5m1")]
+position = Vector2(-319, -278)
+scale = Vector2(4, 4)
+tower_r = ExtResource("6_eow3j")
+
+[node name="Defend_3" parent="." unique_id=2098745611 instance=ExtResource("20_hb5m1")]
+position = Vector2(-11, -281)
+scale = Vector2(4, 4)
+tower_r = ExtResource("6_eow3j")
+
+[node name="Defend_4" parent="." unique_id=959401236 instance=ExtResource("20_hb5m1")]
+position = Vector2(149, -29)
+scale = Vector2(4, 4)
+tower_r = ExtResource("6_eow3j")
+
+[node name="Defend_5" parent="." unique_id=1111536906 instance=ExtResource("20_hb5m1")]
+position = Vector2(-27, 218)
+scale = Vector2(4, 4)
+tower_r = ExtResource("6_eow3j")
+
+[node name="Defend_6" parent="." unique_id=249457804 instance=ExtResource("20_hb5m1")]
+position = Vector2(-314, 212)
+scale = Vector2(4, 4)
+tower_r = ExtResource("6_eow3j")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1709364309]
+unique_name_in_owner = true
+
+[node name="UI" parent="CanvasLayer" unique_id=904776789 instance=ExtResource("4_fc0e3")]

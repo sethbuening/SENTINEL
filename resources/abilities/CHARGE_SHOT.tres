@@ -1,0 +1,7 @@
+[gd_resource type="Resource" script_class="Charge_Shot" format=3 uid="uid://djuqn47vt8qpl"]
+
+[ext_resource type="Script" uid="uid://d37pyqwabmvem" path="res://abilities/CHARGE_SHOT.gd" id="1_ytr1s"]
+
+[resource]
+script = ExtResource("1_ytr1s")
+metadata/_custom_type_script = "uid://d37pyqwabmvem"

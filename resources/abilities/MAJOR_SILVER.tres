@@ -1,0 +1,7 @@
+[gd_resource type="Resource" script_class="Ability_2" format=3 uid="uid://df0plypiayqtu"]
+
+[ext_resource type="Script" uid="uid://cdaoe3g8m5gny" path="res://abilities/MAJOR_SILVER.gd" id="1_5jp1b"]
+
+[resource]
+script = ExtResource("1_5jp1b")
+metadata/_custom_type_script = "uid://cdaoe3g8m5gny"

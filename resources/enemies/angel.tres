@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="enemy_r" format=3 uid="uid://0i8hv3ovh76v"]
+
+[ext_resource type="Script" uid="uid://ti0ifjsqkgpj" path="res://enemies/enemy_r.gd" id="1_3tssc"]
+[ext_resource type="Resource" uid="uid://ikrfiic67681" path="res://resources/behaviors/b_angel.tres" id="1_3w3eg"]
+[ext_resource type="Texture2D" uid="uid://ctpt1cal2npmw" path="res://art/enemies/angel.png" id="3_4ine0"]
+
+[resource]
+script = ExtResource("1_3tssc")
+type = 2
+sprite = ExtResource("3_4ine0")
+behavior = ExtResource("1_3w3eg")
+metadata/_custom_type_script = "uid://ti0ifjsqkgpj"

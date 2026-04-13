@@ -1,0 +1,7 @@
+[gd_resource type="Resource" script_class="Bolster" format=3 uid="uid://di5f23xfat10r"]
+
+[ext_resource type="Script" uid="uid://dtk3e6nyjrhqy" path="res://abilities/BOLSTER.gd" id="1_al1lv"]
+
+[resource]
+script = ExtResource("1_al1lv")
+metadata/_custom_type_script = "uid://dtk3e6nyjrhqy"
